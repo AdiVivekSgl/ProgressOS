@@ -1,0 +1,2 @@
+# Patches for ProgressOS.
+# Phase 1 does not require database migrations.
