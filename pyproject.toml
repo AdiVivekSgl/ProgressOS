@@ -12,8 +12,8 @@ dependencies = ["frappe>=15.0.0"]
 Homepage = "https://github.com/progress-os/progress_os"
 Repository = "https://github.com/progress-os/progress_os"
 
-[tool.setuptools.packages.find]
-where = ["progress_os"]
+[tool.setuptools]
+packages = ["progress_os"]
 
 [tool.ruff]
 line-length = 110
