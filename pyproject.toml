@@ -1,19 +1,27 @@
 [project]
 name = "progress_os"
-version = "0.0.1"
-description = "ProgressOS: organizational memory for Frappe."
-authors = [{ name = "ProgressOS Contributors" }]
+description = "Organizational memory and activity timeline for Frappe."
+authors = [
+    { name = "ProgressOS Contributors", email = "maintainers@example.com" },
+]
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "GPL-3.0-only" }
-dependencies = ["frappe>=15.0.0"]
+dynamic = ["version"]
+dependencies = [
+    # frappe is installed and managed by bench; do not pin it here.
+]
 
 [project.urls]
 Homepage = "https://github.com/progress-os/progress_os"
 Repository = "https://github.com/progress-os/progress_os"
 
-[tool.setuptools]
-packages = ["progress_os"]
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0,<16.0.0"
 
 [tool.ruff]
 line-length = 110
