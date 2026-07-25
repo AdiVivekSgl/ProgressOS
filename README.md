@@ -20,6 +20,25 @@ Planned MVP DocTypes:
 - Reaction
 - ProgressOS Settings
 
+## Installation
+
+### Frappe Cloud
+
+1. Go to your Frappe Cloud dashboard → **Apps** → **Add App** → **Add from GitHub**.
+2. Select this repository (`progress-os/progress_os`) and the branch you want to deploy.
+3. Add the app to a bench group running **Frappe v15**, then install it on your site.
+
+### Self-hosted bench
+
+```bash
+# From your bench directory
+bench get-app https://github.com/progress-os/progress_os --branch main
+bench --site your-site.local install-app progress_os
+bench --site your-site.local migrate
+```
+
+Requires Frappe v15+ and Python 3.10+.
+
 ## Documentation
 
 - [Architecture](docs/architecture.md)
