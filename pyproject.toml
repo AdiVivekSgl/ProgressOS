@@ -1,0 +1,23 @@
+[project]
+name = "progress_os"
+version = "0.0.1"
+description = "ProgressOS: organizational memory for Frappe."
+authors = [{ name = "ProgressOS Contributors" }]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-only" }
+dependencies = ["frappe>=15.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/progress-os/progress_os"
+Repository = "https://github.com/progress-os/progress_os"
+
+[tool.setuptools]
+packages = ["progress_os"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
