@@ -1,8 +1,17 @@
 # ProgressOS Architecture
 
+> Derived from and subordinate to [`docs/product_brief.md`](product_brief.md), the
+> canonical product brief. Where this document and the brief disagree, the brief wins.
+
 ## Product Intent
 
 ProgressOS is a generic Frappe application for capturing organizational memory. It records meaningful work events that explain how operational outcomes happened, while avoiding surveillance-oriented patterns.
+
+The application exists to capture institutional knowledge, improve collaboration, encourage continuous recognition, provide AI with rich organizational context, reduce dependence on WhatsApp/email/memory, and make work visible without creating administrative burden.
+
+## Experience North Star
+
+Logging meaningful work should take **less than 30 seconds** — the capture experience should be faster than sending a WhatsApp message. ProgressOS should feel like GitHub Activity, a LinkedIn feed, Slack threads, or a Notion timeline — never like daily work reports, CRM call logs, or employee monitoring software.
 
 ## Architectural Principles
 
@@ -33,3 +42,13 @@ The following extension points should be introduced as stable hook names during 
 - `on_reaction_added`
 - `on_action_completed`
 - `on_digest_generated`
+
+## Engineering Conventions
+
+- Follow standard Frappe conventions.
+- Avoid unnecessary custom JavaScript where framework features already exist.
+- Use Workspaces instead of custom pages where possible.
+- Keep client-side logic lightweight; prefer server-side business rules.
+- Document every public class and API.
+- Write unit tests for core functionality.
+- Maintain a clean modular architecture with minimal coupling (see [`module_boundaries.md`](module_boundaries.md)).
