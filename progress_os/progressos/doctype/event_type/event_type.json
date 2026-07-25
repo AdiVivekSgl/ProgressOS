@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:event_type_name",
+ "creation": "2026-07-25 00:00:00",
+ "description": "Configurable category for a Progress Event.",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "event_type_name",
+  "enabled",
+  "column_break_head",
+  "icon",
+  "color",
+  "display_order",
+  "section_break_desc",
+  "description",
+  "section_break_rules",
+  "default_visibility",
+  "column_break_rules",
+  "requires_outcome",
+  "requires_next_action"
+ ],
+ "fields": [
+  {
+   "fieldname": "event_type_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Event Type Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "column_break_head",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Emoji or icon class shown on feed cards.",
+   "fieldname": "icon",
+   "fieldtype": "Data",
+   "label": "Icon"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "default": "0",
+   "fieldname": "display_order",
+   "fieldtype": "Int",
+   "label": "Display Order"
+  },
+  {
+   "fieldname": "section_break_desc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_rules",
+   "fieldtype": "Section Break",
+   "label": "Rules"
+  },
+  {
+   "default": "Organization",
+   "fieldname": "default_visibility",
+   "fieldtype": "Select",
+   "label": "Default Visibility",
+   "options": "Private\nTeam\nDepartment\nOrganization\nRestricted"
+  },
+  {
+   "fieldname": "column_break_rules",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_outcome",
+   "fieldtype": "Check",
+   "label": "Requires Outcome"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_next_action",
+   "fieldtype": "Check",
+   "label": "Requires Next Action"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-25 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ProgressOS",
+ "name": "Event Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ProgressOS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "ProgressOS User"
+  }
+ ],
+ "sort_field": "display_order",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1
+}
