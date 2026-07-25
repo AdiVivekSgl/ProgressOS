@@ -41,6 +41,7 @@ Requires Frappe v15+ and Python 3.10+.
 
 ## Documentation
 
+- **[Product Brief](docs/product_brief.md)** — canonical vision, principles, and Phase 1 scope (start here)
 - [Architecture](docs/architecture.md)
 - [Data Model](docs/data_model.md)
 - [Module Boundaries](docs/module_boundaries.md)

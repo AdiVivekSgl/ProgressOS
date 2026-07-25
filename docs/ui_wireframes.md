@@ -13,15 +13,19 @@ ProgressOS workspace sections:
 - Recent Wins
 - Configuration
 
+The ProgressOS workspace (feed) should become the default landing page for users.
+
 ## Quick Event Capture
 
-The default capture pattern should require:
+Logging an event should take less than 30 seconds — faster than sending a WhatsApp
+message. The default capture pattern should require:
 
 1. One click to open quick entry.
 2. One dropdown to choose an activity type.
 3. One text box for the event description.
 
-Optional fields should stay collapsed unless needed.
+Optional fields should stay collapsed unless needed, and no field should be mandatory
+unless the selected activity type explicitly requires it.
 
 ## Feed Card
 

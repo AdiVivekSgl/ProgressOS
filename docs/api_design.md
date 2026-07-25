@@ -28,7 +28,7 @@ Returns events attached to any arbitrary document identified by DocType and docu
 
 ## Provider Interfaces
 
-AI providers should implement a narrow interface for summarization, classification, and search enrichment. Provider-specific credentials and prompts belong in configuration, not domain DocTypes.
+AI providers should implement a narrow interface for summarization, classification, and search enrichment. The interface must stay provider-independent so candidate backends — OpenAI, Claude, Gemini, Raven, Ollama, and future providers — are interchangeable. Provider-specific credentials and prompts belong in configuration, not domain DocTypes.
 
 ## Compatibility
 
